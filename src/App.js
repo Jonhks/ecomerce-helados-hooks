@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div className="App">
-      <TopMenu productsCart= {productsCart} getProuctsCart={getProuctsCart}/>
+      <TopMenu productsCart= {productsCart} getProuctsCart={getProuctsCart} products={products}/>
       <h1 className="text-center">Productos</h1>
       <Products products={products} addProductCar={addProductCar} />
       <ToastContainer

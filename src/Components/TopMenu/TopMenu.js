@@ -6,7 +6,7 @@ import { ReactComponent as Logo } from '../../assets/img/logo.svg'
 import './TopMenu.sass'
 
 export default (props) => {
-  const { productsCart, getProuctsCart } = props
+  const { productsCart, getProuctsCart, products } = props
   return (
     <Navbar
       bg="dark" 
@@ -16,7 +16,7 @@ export default (props) => {
       <Container>
         <BrandNav />
         <MenuNav />
-        <Cart productsCart={productsCart} getProuctsCart={getProuctsCart}/>
+        <Cart productsCart={productsCart} getProuctsCart={getProuctsCart} products={products}/>
       </Container>
     </Navbar>
   )
